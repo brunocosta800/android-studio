@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F49F36"
+    android:orientation="vertical"
+    app:barrierMargin="0sp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tituloHamburgueria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bruno`s Burguer"
+                android:textAlignment="center"
+                android:textColor="#FFF5F5"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imagemTroca"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                app:srcCompat="@drawable/logobrunosburguer" />
+
+            <TextView
+                android:id="@+id/tituloPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#40F44336"
+                android:text="Faça seu pedido"
+                android:textColor="#F4F1F1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rdGroupHambuerguer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#40F44336"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tituloHamburguer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hamgurguer"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioXSalada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="XSalada" />
+
+                <RadioButton
+                    android:id="@+id/radioXBacon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="XBacon" />
+
+                <RadioButton
+                    android:id="@+id/radioXTudo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="XTudo" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:background="#40F44336"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tituloBatata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Batatas"
+                    android:textColor="#050505"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioBatataPequena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="Pequena" />
+
+                <RadioButton
+                    android:id="@+id/radiobatataMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="Média" />
+
+                <RadioButton
+                    android:id="@+id/radioBatataGrande"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="Grande" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#40F44336"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tituloBebidas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bebidas"
+                    android:textColor="#090909"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioRefrigerante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="Refrigerante" />
+
+                <RadioButton
+                    android:id="@+id/radioSuco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="Suco" />
+
+                <RadioButton
+                    android:id="@+id/radioChaGelado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF2E1F"
+                    android:text="ChaGelado" />
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/switchDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTintMode="src_in"
+                android:foregroundTint="#FF5722"
+                android:text="Delivery"
+                android:textColorHighlight="#FF5722"
+                android:textColorLink="#FF5722" />
+
+            <Button
+                android:id="@+id/btnResetar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#FF2E1F"
+                android:onClick="Resetar"
+                android:text="Resetar" />
+
+            <Button
+                android:id="@+id/btnConfirmePedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF2E1F"
+                android:onClick="MostrarPedido"
+                android:text="Confirme deu pedido" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
